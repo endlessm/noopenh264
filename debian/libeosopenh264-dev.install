@@ -1,0 +1,4 @@
+usr/include
+usr/lib/*/pkgconfig
+usr/lib/*/libopenh264.a
+usr/lib/*/libopenh264.so

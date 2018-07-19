@@ -1,0 +1,25 @@
+Source: noopenh264
+Section: libs
+Priority: optional
+Maintainer: Endless <support@endlessm.com>
+Homepage: https://github.com/endlessm/noopenh264
+Standards-Version: 4.1.4
+Build-Depends: debhelper (>= 11), meson
+
+Package: libnoopenh264-4
+Architecture: any
+Multi-Arch: same
+Conflicts: libopenh264-4
+Provides: libopenh264-4
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Dummy implementation of the API from the shared library from Cisco
+
+Package: libnoopenh264-dev
+Architecture: any
+Section: libdevel
+Multi-Arch: same
+Conflicts: libopenh264-dev
+Provides: libopenh264-dev
+Depends: libnoopenh264-4 (= ${binary:Version}), ${misc:Depends}
+Description: Dummy implementation of the API from the shared library from Cisco
+ This package contains development files.
