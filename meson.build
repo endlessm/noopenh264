@@ -48,7 +48,8 @@ pkg_install_dir = '@0@/pkgconfig'.format(get_option('libdir'))
 foreach t : ['', '-static']
   pkgconf = configuration_data()
   pkgconf.set('prefix', join_paths(get_option('prefix')))
-  pkgconf.set('VERSION', meson.project_version())
+  pkgconf.set('libdir', libdir)
+  pkgconf.set('VERSION', matching_version)
   if t == '-static'
     do_install = false
     pkgconf.set('LIBS', '-lstdc++ -lpthread -lm')
