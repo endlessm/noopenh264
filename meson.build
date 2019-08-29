@@ -8,8 +8,8 @@ project('noopenh264', ['cpp'],
   ],
 )
 
-major_version = '4'
-matching_version = '1.8.0'
+major_version = '5'
+matching_version = '2.0.0'
 
 pkgconfig = import('pkgconfig')
 
