@@ -1,4 +1,10 @@
-noopenh264 (0.1.0) UNRELEASED; urgency=low
+noopenh264 (2.0.0) eos; urgency=low
+
+  * Update to match new upstream version and soname.
+
+ -- Robert McQueen <rob@endlessm.com>  Wed, 04 Sep 2019 16:20:57 +0100
+
+noopenh264 (0.1.0) eos; urgency=low
 
   * Initial release (Closes: T23345)
 
