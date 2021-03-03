@@ -1,3 +1,16 @@
+noopenh264 (2.1.1-1endless1) eos; urgency=medium
+
+  * d/rules: Install ld.so.conf config file and links to the openh264 flatpak
+    runtime - only on Endless based systems
+  * d/libnoopenh264-6.dirs: Add, ship ld.so.conf config file
+  * d/libnoopenh264-6.links: Add, ship links to openh264 flatpak runtime -
+    only on selected architectures
+  * d/runtime-org.freedesktop.Platform.openh264.conf.in: Add, ld.so.conf
+    config file
+  * https://phabricator.endlessm.com/T23316
+
+ -- Andre Moreira Magalhaes <andre.magalhaes@endlessos.org>  Wed, 03 Mar 2021 17:35:13 -0300
+
 noopenh264 (2.1.1) eos; urgency=medium
 
   * Update to match new upstream version and soname.
