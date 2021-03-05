@@ -1,9 +1,9 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-DEBIAN_DIST := $(shell lsb_release -ds | tr -d '()' | sed -e 's/\#/ /g')
+DEBIAN_DIST := "$(shell dpkg-vendor --query vendor)"
 
-ifneq (,$(findstring Endless,$(DEBIAN_DIST)))
+ifeq ($(DEBIAN_DIST),"Endless")
 debian/runtime-org.freedesktop.Platform.openh264.conf: debian/runtime-org.freedesktop.Platform.openh264.conf.in
 	### configure
 	sed -e 's/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)/g' \
