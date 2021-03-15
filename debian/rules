@@ -1,27 +1,5 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-DEBIAN_DIST := "$(shell dpkg-vendor --query vendor)"
-
-ifeq ($(DEBIAN_DIST),"Endless")
-debian/runtime-org.freedesktop.Platform.openh264.conf: debian/runtime-org.freedesktop.Platform.openh264.conf.in
-	### configure
-	sed -e 's/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)/g' \
-		$< > $@
-
-override_dh_install: debian/runtime-org.freedesktop.Platform.openh264.conf
-	mkdir -p debian/libnoopenh264-6/etc/ld.so.conf.d/
-	install -m 755 debian/runtime-org.freedesktop.Platform.openh264.conf debian/libnoopenh264-6/etc/ld.so.conf.d/
-	dh_install
-
-override_dh_clean:
-	rm -f debian/runtime-org.freedesktop.Platform.openh264.conf
-else
-# Do not install /etc/ld.so.conf.d and flatpak runtime links when not on Endless
-override_dh_link:
-
-override_dh_installdirs:
-endif
-
 %:
 	dh $@

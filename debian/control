@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Endless <support@endlessm.com>
 Homepage: https://github.com/endlessm/noopenh264
 Standards-Version: 4.3.0
-Build-Depends: debhelper-compat (= 13), dh-exec, meson
+Build-Depends: debhelper-compat (= 13), meson
 
 Package: libnoopenh264-6
 Architecture: any

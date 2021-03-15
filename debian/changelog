@@ -1,3 +1,11 @@
+noopenh264 (2.1.1-2) eos; urgency=medium
+
+  * Revert changes to add plumbing to openh264 flatpak runtime, this is
+    now moved to a separate package:
+    https://phabricator.endlessm.com/T23316
+
+ -- Andre Moreira Magalhaes <andre.magalhaes@endlessos.org>  Mon, 15 Mar 2021 17:07:11 -0300
+
 noopenh264 (2.1.1-1endless1) eos; urgency=medium
 
   * d/rules: Install ld.so.conf config file and links to the openh264 flatpak
