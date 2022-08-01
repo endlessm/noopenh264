@@ -1,3 +1,9 @@
+noopenh264 (2.3.0) eos; urgency=medium
+
+  * Update to match new upstream version.
+
+ -- Will Thompson <wjt@endlessos.org>  Mon, 01 Aug 2022 18:07:27 +0100
+
 noopenh264 (2.1.1-2) eos; urgency=medium
 
   * Revert changes to add plumbing to openh264 flatpak runtime, this is
