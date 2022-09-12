@@ -1,4 +1,4 @@
-noopenh264 (2.2.0) eos; urgency=medium
+noopenh264 (2.3.0+really2.2.0) eos; urgency=medium
 
   * Downgrade to 2.2.0, since 2.3.0 included a breaking change to
     SEncParamExt.
