@@ -1,26 +1,5 @@
-noopenh264
-==========
+This repo has moved! You are looking at the old repo.
 
-Fake implementation of the OpenH264 library we can link from
-regardless of the actual library being available
+This project is now maintained as part of freedesktop-sdk:
 
-Licensing
-=========
-
-This project is based on the original repository from Cisco at
-https://github.com/cisco/openh264, and as such it is licensed
-according to Cisco Systems' own license at [1], wit the sole exception
-of the dummy implementation provided for the entry points defined in
-codec/api/svc/codec_api.h, which are licensed the LGPL-2.1+.
-
-See debian/copyright and COPYING.* for more details.
-
-Bugs
-====
-
-Bug reports and patches should be filed in GitHub.
-
-Contact
-=======
-
-https://github.com/endlessm/noopenh264
+https://gitlab.com/freedesktop-sdk/noopenh264
